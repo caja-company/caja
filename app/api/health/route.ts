@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server"
 import { sql } from "drizzle-orm"
-import Anthropic from "@anthropic-ai/sdk"
+import { GoogleGenAI } from "@google/genai"
 import { db } from "@/db"
 
-// CLAUDE.md §15: modelo padrão, snapshot fixo
-const MODEL = "claude-sonnet-4-6-20260218"
+// CLAUDE.md §3 + §15: modelo padrão para todas as chamadas
+const MODEL = "gemini-2.5-flash"
 
 // CLAUDE.md §15: route handlers de IA têm timeout generoso
 export const maxDuration = 60
@@ -21,13 +21,13 @@ async function checkDb(): Promise<boolean> {
 }
 
 async function checkAi(): Promise<boolean> {
-  if (!process.env.ANTHROPIC_API_KEY) return false
+  if (!process.env.GEMINI_API_KEY) return false
   try {
-    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
-    await client.messages.create({
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY })
+    await ai.models.generateContent({
       model: MODEL,
-      max_tokens: 1,
-      messages: [{ role: "user", content: "ok" }],
+      contents: "ok",
+      config: { maxOutputTokens: 1 },
     })
     return true
   } catch (err) {
