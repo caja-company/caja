@@ -10,7 +10,8 @@
       "Bash(npx --yes shadcn@latest add form --overwrite -y)",
       "Bash(npm install *)",
       "Bash(node -e \"console.log\\('GEMINI_API_KEY length:', \\(process.env.GEMINI_API_KEY||''\\).length\\)\")",
-      "Bash(npm uninstall *)"
+      "Bash(npm uninstall *)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

@@ -91,8 +91,8 @@ export default async function ArtistaPublicoPage({ params }: PageProps) {
     <>
       <style>{`
         @media (max-width: 640px) {
-          .artista-hero-grid { grid-template-columns: 1fr !important; }
-          .artista-hero-foto { width: 200px !important; margin: 0 auto; }
+          .artista-hero-grid { grid-template-columns: 1fr !important; gap: 1.25rem !important; }
+          .artista-hero-foto { width: 180px !important; margin: 0 auto; }
         }
       `}</style>
 
