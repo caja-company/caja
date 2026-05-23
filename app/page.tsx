@@ -37,6 +37,29 @@ export default function HomePage() {
           background: #6B2D0E !important;
           color: white !important;
         }
+        @media (max-width: 640px) {
+          .cidade-bloco {
+            height: auto !important;
+            min-height: 460px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 1.5rem !important;
+            padding: 2.5rem 1.25rem !important;
+          }
+          .cidade-nome-wrap {
+            position: static !important;
+            transform: none !important;
+            text-align: center !important;
+          }
+          .cidade-card {
+            position: static !important;
+            transform: none !important;
+            width: 100% !important;
+            max-width: 360px !important;
+          }
+        }
       `}</style>
 
       {/* ── Hero (intocado) ────────────────────────────────────────────────── */}
@@ -124,6 +147,7 @@ export default function HomePage() {
           return (
             <div
               key={cidade.slug}
+              className="cidade-bloco"
               style={{
                 position: "relative",
                 height: "500px",
@@ -145,6 +169,7 @@ export default function HomePage() {
 
               {/* Nome da cidade */}
               <div
+                className="cidade-nome-wrap"
                 style={{
                   position: "absolute",
                   top: "50%",
@@ -169,6 +194,7 @@ export default function HomePage() {
 
               {/* Card flutuante */}
               <div
+                className="cidade-card"
                 style={{
                   position: "absolute",
                   top: "50%",
