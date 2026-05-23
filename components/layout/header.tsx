@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 const navLinks = [
-  { href: "/festivais", label: "Festivais" },
+  { href: "/acervo/festivais", label: "Festivais" },
   { href: "/atracoes", label: "Atrações" },
 ]
 

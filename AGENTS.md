@@ -128,7 +128,7 @@ caja/
 │   └── utils.ts
 ├── public/
 ├── .env.local
-├── CLAUDE.md
+├── AGENTS.md
 ├── drizzle.config.ts
 ├── next.config.ts
 ├── package.json
