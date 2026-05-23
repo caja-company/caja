@@ -113,6 +113,13 @@ export default async function AtracoesDetalhePage({ params }: PageProps) {
     : null;
 
   return (
+    <>
+      <style>{`
+        @media (max-width: 640px) {
+          .detail-hero { grid-template-columns: 1fr !important; gap: 1.25rem !important; }
+          .detail-hero-foto { max-width: 100% !important; aspect-ratio: 16/9 !important; border-radius: 0.5rem !important; }
+        }
+      `}</style>
     <main style={{ background: C.bg, minHeight: "calc(100vh - 3.5rem)" }}>
       {/* Breadcrumb */}
       <div
@@ -144,6 +151,7 @@ export default async function AtracoesDetalhePage({ params }: PageProps) {
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "2rem 1.5rem" }}>
         {/* Hero */}
         <section
+          className="detail-hero"
           style={{
             display: "grid",
             gridTemplateColumns: "280px 1fr",
@@ -154,6 +162,7 @@ export default async function AtracoesDetalhePage({ params }: PageProps) {
         >
           {/* Foto */}
           <div
+            className="detail-hero-foto"
             style={{
               aspectRatio: "4/3",
               borderRadius: "0.75rem",
@@ -673,6 +682,7 @@ export default async function AtracoesDetalhePage({ params }: PageProps) {
         CAJA • Acervo Digital do Forró
       </footer>
     </main>
+    </>
   );
 }
 

@@ -151,6 +151,7 @@ export default async function AtracoesPage({ searchParams }: PageProps) {
               name="estilo"
               defaultValue={estilo ?? ""}
               style={{
+                flex: "1 1 190px",
                 padding: "0.6rem 1rem",
                 border: `1px solid ${C.border}`,
                 borderRadius: "0.5rem",
