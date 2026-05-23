@@ -50,11 +50,11 @@ export default function HomePage() {
         </h1>
 
         <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-secondary/80 sm:text-xl">
-          A operação dos festivais culturais brasileiros, profissionalizada.
+          Sergipe em acervo
         </p>
 
         <p className="mt-4 max-w-xl text-balance text-sm leading-relaxed text-secondary/60">
-          Programação, contratações e curadoria com IA — em um só lugar.
+          A memória viva do forró nordestino.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
@@ -94,11 +94,21 @@ export default function HomePage() {
               fontWeight: 600,
               color: "#6B2D0E",
               lineHeight: 1.15,
+              margin: "0 0 0.75rem",
+            }}
+          >
+            As cidades que guardam o forró
+          </h2>
+          <p
+            style={{
+              color: "#9B6B4A",
+              fontSize: "clamp(0.95rem, 2vw, 1.05rem)",
+              lineHeight: 1.6,
               margin: 0,
             }}
           >
-            Os palcos do forró sergipano
-          </h2>
+            Conheça os ícones culturais, os festivais e as tradições de cada município sergipano.
+          </p>
         </div>
 
         {/* Blocos */}
