@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes shadcn@latest init -y -b stone)",
+      "Bash(npx --yes shadcn@latest init -y -b base)",
+      "Bash(npx --yes shadcn@latest init --help)",
+      "Bash(npx --yes shadcn@latest init -d)",
+      "Bash(npx --yes shadcn@latest add card input textarea label select dialog table badge tabs separator sonner form dropdown-menu sheet skeleton alert -y)",
+      "Bash(npx --yes shadcn@latest add @shadcn/form -y)",
+      "Bash(npx --yes shadcn@latest add form --overwrite -y)",
+      "Bash(npm install *)"
+    ]
+  }
+}
