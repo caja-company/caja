@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { PontoFoto } from "./PontoFoto";
 
 // ─── Paleta ─────────────────────────────────────────────────────────────────
 
@@ -21,23 +20,20 @@ const cidades = {
     nome: "Aracaju",
     estado: "Sergipe",
     bio: "Capital de Sergipe e coração do forró nordestino. Fundada em 1855 às margens do Rio Sergipe, Aracaju é uma das primeiras cidades planejadas do Brasil. Conhecida pela qualidade de vida, praias urbanas e hospitalidade do seu povo, a cidade se transforma em junho no maior arraiá à beira-mar do Brasil — com o Forró Caju e o Arraiá do Povo reunindo milhares de pessoas na Orla da Atalaia. Terra de artistas, festivais e tradição junina, Aracaju é o epicentro cultural do forró sergipano.",
-    fotoBg: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Atalaia%2C_Aracaju%2C_SE.jpg/1280px-Atalaia%2C_Aracaju%2C_SE.jpg",
+    fotoBg: "https://www.viajenaviagem.com/wp-content/uploads/2022/01/1-Largo-da-Gente-Sergipana-1920x1080-1.jpg.webp",
     mapUrl: "https://www.google.com/maps/search/Aracaju+Sergipe",
     pontos: [
       {
         nome: "Orla de Atalaia",
         bio: "Cartão-postal de Aracaju com 6 km de extensão à beira-mar. Reúne quiosques, feiras de artesanato, o Oceanário e os famosos Arcos iluminados — coração do Forró Caju e do Arraiá do Povo em junho.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Atalaia%2C_Aracaju%2C_SE.jpg/1280px-Atalaia%2C_Aracaju%2C_SE.jpg",
       },
       {
         nome: "Passarela do Caranguejo",
         bio: "Rua temática na Zona Sul com a icônica escultura do caranguejo gigante em fibra de vidro. Polo gastronômico com bares, restaurantes e música ao vivo todas as noites.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/ClevertonRibeiro_PassarelaDoCaranguejo_Aracaju_SE_%2826137163627%29.jpg/1280px-ClevertonRibeiro_PassarelaDoCaranguejo_Aracaju_SE_%2826137163627%29.jpg",
       },
       {
         nome: "Museu da Gente Sergipana",
         bio: "Museu interativo e imersivo que conta a história e a cultura de Sergipe. Parada obrigatória para entender a alma do povo sergipano — da culinária ao forró.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Museu_da_Gente_Sergipana.jpg/1280px-Museu_da_Gente_Sergipana.jpg",
       },
     ],
   },
@@ -45,23 +41,20 @@ const cidades = {
     nome: "Estância",
     estado: "Sergipe",
     bio: "A Cidade Jardim do sul sergipano é terra do lendário Barco de Fogo, patrimônio imaterial de Sergipe criado por Chico Surdo no fim dos anos 1930. Com 30 dias de festa em junho, Estância é Capital Nacional do Barco de Fogo — o artefato pirotécnico que percorre fios de aço impulsionado por rojões, criando um espetáculo único no céu estanciano. Berço da imprensa sergipana, a cidade combina história, natureza e uma das festas juninas mais autênticas do Nordeste.",
-    fotoBg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Praia_do_Saco_-_Estancia_SE.jpg/1280px-Praia_do_Saco_-_Estancia_SE.jpg",
+    fotoBg: "https://www.gov.br/turismo/pt-br/assuntos/noticias/governo-federal-por-meio-do-mtur-viabiliza-construcao-de-praca-em-estancia-se/EstnciaSeturSergipe.png/@@images/5e3e1603-a3e6-4404-85b7-9198ec088fa7.png",
     mapUrl: "https://www.google.com/maps/search/Estância+Sergipe",
     pontos: [
       {
         nome: "Praia do Saco",
         bio: "Uma das praias mais belas do litoral Sul sergipano, com 5 km de areia branca, águas mornas e calmas, dunas e coqueiros. Paraíso natural a 70 km de Aracaju.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Praia_do_Saco_-_Estancia_SE.jpg/1280px-Praia_do_Saco_-_Estancia_SE.jpg",
       },
       {
         nome: "Memorial do Barco de Fogo",
         bio: "Complexo turístico Porto D'Areia com memorial a céu aberto contando a história do Barco de Fogo e do seu criador Chico Surdo — patrimônio imaterial de Sergipe.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Barco_de_Fogo_Estancia.jpg/1280px-Barco_de_Fogo_Estancia.jpg",
       },
       {
         nome: "Lagoa dos Tambaquis",
         bio: "Lagoa de águas cristalinas no litoral sul, ideal para banho e lazer em contato com a natureza. Um dos balneários mais charmosos e tranquilos do interior sergipano.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Lagoa_dos_Tambaquis.jpg/1280px-Lagoa_dos_Tambaquis.jpg",
       },
     ],
   },
@@ -69,23 +62,20 @@ const cidades = {
     nome: "Lagarto",
     estado: "Sergipe",
     bio: "No centro-sul de Sergipe, Lagarto é a maior cidade do interior sergipano, com mais de 400 anos de história. Conhecida como Capital Nacional da Vaquejada, a cidade celebra junho com a tradicional Silibrina — guerra de buscapés e espadas de fogo — e o Festival da Mandioca, que abre os festejos ainda em maio. Entre natureza exuberante, patrimônio histórico e cultura viva, Lagarto é um destino que surpreende quem chega.",
-    fotoBg: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cachoeira_do_Saboeiro_Lagarto.jpg/1280px-Cachoeira_do_Saboeiro_Lagarto.jpg",
+    fotoBg: "https://www.skyscrapercity.com/attachments/1693760915507-png.5792704/",
     mapUrl: "https://www.google.com/maps/search/Lagarto+Sergipe",
     pontos: [
       {
         nome: "Cachoeira do Saboeiro",
         bio: "Trilha de 14 km entre mata nativa até uma exuberante queda d'água. Destino obrigatório para aventureiros e amantes do ecoturismo no centro-sul de Sergipe.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cachoeira_do_Saboeiro_Lagarto.jpg/1280px-Cachoeira_do_Saboeiro_Lagarto.jpg",
       },
       {
         nome: "Barragem Dionísio de Araújo Machado",
         bio: "Construída nos anos 1980 para represar o Rio Piauí, tornou-se um dos principais balneários do interior sergipano — pesca, diversão aquática e bares à beira d'água.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Barragem_Lagarto_SE.jpg/1280px-Barragem_Lagarto_SE.jpg",
       },
       {
         nome: "Grupo Escolar Sílvio Romero",
         bio: "Patrimônio tombado pelo Estado, construído em 1923. Após restauração, funciona como centro cultural com salas de exposição, galeria de arte e café — símbolo da história lagartense.",
-        foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Grupo_Silvio_Romero_Lagarto.jpg/1280px-Grupo_Silvio_Romero_Lagarto.jpg",
       },
     ],
   },
@@ -231,40 +221,24 @@ export default async function CidadePage({ params }: PageProps) {
                     border: `1px solid ${C.border}`,
                     borderRadius: "0.75rem",
                     overflow: "hidden",
+                    padding: "1.25rem",
                   }}
                 >
-                  {/* Foto 4:3 */}
-                  <div
+                  <h3
                     style={{
-                      aspectRatio: "4/3",
-                      background: "#E8D5BE",
-                      overflow: "hidden",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      fontFamily: "Georgia, serif",
+                      fontSize: "1rem",
+                      fontWeight: 600,
+                      color: C.primary,
+                      marginBottom: "0.5rem",
+                      lineHeight: 1.25,
                     }}
                   >
-                    <PontoFoto src={ponto.foto} alt={ponto.nome} />
-                  </div>
-
-                  {/* Texto */}
-                  <div style={{ padding: "1rem" }}>
-                    <h3
-                      style={{
-                        fontFamily: "Georgia, serif",
-                        fontSize: "1rem",
-                        fontWeight: 600,
-                        color: C.primary,
-                        marginBottom: "0.5rem",
-                        lineHeight: 1.25,
-                      }}
-                    >
-                      {ponto.nome}
-                    </h3>
-                    <p style={{ fontSize: "0.85rem", color: C.secondary, lineHeight: 1.6, margin: 0 }}>
-                      {ponto.bio}
-                    </p>
-                  </div>
+                    {ponto.nome}
+                  </h3>
+                  <p style={{ fontSize: "0.85rem", color: C.secondary, lineHeight: 1.6, margin: 0 }}>
+                    {ponto.bio}
+                  </p>
                 </article>
               ))}
             </div>
