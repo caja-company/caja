@@ -67,6 +67,13 @@ export const bandas = pgTable(
         slug: text("slug").notNull().unique(),
         bio: text("bio"),
         estilo: estiloMusicalEnum("estilo").notNull(),
+        // Camada cultural (CLAUDE.md §8) — base do acervo cultural pesquisável
+        tradicaoMusical: text("tradicao_musical"),
+        influenciasMestres: jsonb("influencias_mestres").$type<string[]>(),
+        regiaoCultural: text("regiao_cultural"),
+        repertorioBase: jsonb("repertorio_base").$type<
+            { titulo: string; autor: string }[]
+        >(),
         cidadeOrigem: text("cidade_origem"),
         estadoOrigem: text("estado_origem"),
         fotoUrl: text("foto_url"),
