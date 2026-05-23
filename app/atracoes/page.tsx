@@ -183,7 +183,7 @@ export default async function AtracoesPage({ searchParams }: PageProps) {
               Buscar
             </button>
             {hasFilter && (
-              <a
+              <Link
                 href="/atracoes"
                 style={{
                   color: C.secondary,
@@ -192,7 +192,7 @@ export default async function AtracoesPage({ searchParams }: PageProps) {
                 }}
               >
                 Limpar filtros
-              </a>
+              </Link>
             )}
           </form>
         </div>
@@ -212,12 +212,12 @@ export default async function AtracoesPage({ searchParams }: PageProps) {
               <p style={{ fontSize: "1.1rem", marginBottom: "1rem" }}>
                 Nenhuma atração encontrada.
               </p>
-              <a
+              <Link
                 href="/atracoes"
                 style={{ color: C.primary, fontWeight: 600, fontSize: "0.9rem" }}
               >
                 Limpar filtros
-              </a>
+              </Link>
             </div>
           ) : (
             <div
