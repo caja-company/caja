@@ -81,7 +81,7 @@ export default function HomePage() {
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
-          <Link href="/festivais" className={buttonVariants({ size: "lg" })}>
+          <Link href="/acervo/festivais" className={buttonVariants({ size: "lg" })}>
             Ver festivais
           </Link>
           <Link
